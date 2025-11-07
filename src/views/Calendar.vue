@@ -353,20 +353,20 @@ const processPaymentSimple = async () => {
 };
 
 onMounted(async () => {
-  // const MercadoPago: any = await loadMercadoPago();
-  // const mp = new MercadoPago(MP_PUBLIC_KEY)
-  // console.log(mp)
-  // const cardToken = await mp.createCardToken({
-  //   cardNumber: "4111111111111111",  // Sin espacios
-  //   cardholderName: "APRO",
-  //   cardExpirationMonth: "11",
-  //   cardExpirationYear: "25",  // Solo últimos 2 dígitos
-  //   securityCode: "123",
-  //   identificationType: "DNI",
-  //   identificationNumber: "12345678"
-  // });
+  const MercadoPago: any = await loadMercadoPago();
+  const mp = new MercadoPago(MP_PUBLIC_KEY)
+  console.log(mp)
+  const cardToken = await mp.createCardToken({
+    cardNumber: "4111111111111111",  // Sin espacios
+    cardholderName: "APRO",
+    cardExpirationMonth: "11",
+    cardExpirationYear: "25",  // Solo últimos 2 dígitos
+    securityCode: "123",
+    identificationType: "DNI",
+    identificationNumber: "12345678"
+  });
 
-  // console.log('✅ Token creado:', cardToken.id);
+  console.log('✅ Token creado:', cardToken);
 
   const date = new Date()
   const fullDay = `${date.getFullYear()}-${(date.getMonth()+1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`
