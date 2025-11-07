@@ -1,0 +1,20 @@
+export const hoursAvailable = [
+  { id: 1, hora12: "6:00AM - 7:00AM", disponible: true, reservada: false, academy: false },
+  { id: 2, hora12: "7:00AM - 8:00AM", disponible: true, reservada: false, academy: false },
+  { id: 3, hora12: "8:00AM - 9:00AM", disponible: true, reservada: false, academy: false },
+  { id: 4, hora12: "9:00AM - 10:00AM", disponible: true, reservada: false, academy: false },
+  { id: 5, hora12: "10:00AM - 11:00AM", disponible: true, reservada: false, academy: false },
+  { id: 6, hora12: "11:00AM - 12:00PM", disponible: true, reservada: false, academy: false },
+  { id: 7, hora12: "12:00PM - 1:00PM", disponible: true, reservada: false, academy: false },
+  { id: 8, hora12: "1:00PM - 2:00PM", disponible: true, reservada: false, academy: false },
+  { id: 9, hora12: "2:00PM - 3:00PM", disponible: true, reservada: false, academy: false },
+  { id: 10, hora12: "3:00PM - 4:00PM", disponible: true, reservada: false, academy: false },
+  { id: 11, hora12: "4:00PM - 5:00PM", disponible: false, reservada: true, academy: true },
+  { id: 12, hora12: "5:00PM - 6:00PM", disponible: false, reservada: true, academy: true },
+  { id: 13, hora12: "6:00PM - 7:00PM", disponible: false, reservada: true, academy: true },
+  { id: 14, hora12: "7:00PM - 8:00PM", disponible: false, reservada: true, academy: true },
+  { id: 15, hora12: "8:00PM - 9:00PM", disponible: false, reservada: true, academy: true },
+  { id: 16, hora12: "9:00PM - 10:00PM", disponible: false, reservada: true, academy: true },
+  { id: 17, hora12: "10:00PM - 11:00PM", disponible: true, reservada: false, academy: false },
+  { id: 18, hora12: "11:00PM - 12:00AM", disponible: true, reservada: false, academy: false }
+];

@@ -1,0 +1,21 @@
+---
+const { img, mainColor } = Astro.props;
+---
+
+<section
+  class="court-section relative w-full h-dvh grid place-content-center overflow-hidden group transition-all duration-700"
+>
+  <img
+    class="court-image image-mask absolute w-full h-full object-cover brightness-[0.35] transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-[0.55]"
+    src={img}
+    alt="Court"
+  />
+  <div class="reveal-effect"></div>
+  <a
+    href="calendario-apupal"
+    class="action-button relative text-white font-semibold py-3 px-8 rounded-md shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-xl cursor-pointer"
+    style={`background-color: ${mainColor};`}
+  >
+    Separar
+  </a>
+</section>

@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clay-main: #AA4A44;
+  --color-clay-light: #fcf4f4
+}
+
+body {
+    /* background-color: #0a0a0a;
+    color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scrollbar-color: #AA4A44 transparent;
+}
+
+.court-section {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    transition: all 0.7s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.court-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
+    transition: all 0.7s ease-out;
+    z-index: 1;
+}
+
+.court-section:hover .court-image {
+    filter: brightness(0.55);
+    transform: scale(1.1);
+}
+
+.reveal-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.9) 70%);
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.court-section:hover .reveal-effect {
+    opacity: 0;
+    background: radial-gradient(circle, transparent 10%, rgba(0, 0, 0, 0.9) 50%);
+}
+
+.action-button {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background-color: #c0392b;
+}
+
+.instructions {
+    margin-top: 2rem;
+    color: #888;
+    font-style: italic;
+}
+
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

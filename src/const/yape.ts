@@ -1,0 +1,1 @@
+export const MP_PUBLIC_KEY = 'APP_USR-104ea39f-4cbf-46ea-823f-422ecb9d03b7' as const

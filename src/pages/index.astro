@@ -1,0 +1,38 @@
+---
+import CourtView from '../components/CourtView.astro';
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const dataCourts = {
+  clay: {
+    img: "/arcilla.webp",
+    colors: {
+      main: '#c85a19'
+    }
+  },
+  hard:{ 
+    img: '/cemento.webp',
+    colors: {
+      main: '#781f89'
+    }
+  }
+}
+---
+
+<Layout>
+	<main class="w-full min-h-dvh flex flex-row bg-black">
+    <CourtView img={dataCourts.clay.img} mainColor={dataCourts.clay.colors.main} />
+    <CourtView img={dataCourts.hard.img} mainColor={dataCourts.hard.colors.main} />
+  </main>
+</Layout>
+
+<script>
+  // const dataCourts = {
+  //   clay: {
+  //     img: "/arcilla.webp",
+  //   },
+  //   hard:{ 
+  //     img: '/cemento.webp'
+  //   }
+  // }
+</script>

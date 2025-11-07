@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Calendar from '../views/Calendar.vue';
+---
+<Layout>
+  <Calendar client:only />
+</Layout>
+<style scoped>
+body {
+  background-color: #fcf4f4/80%;
+}
+</style>
