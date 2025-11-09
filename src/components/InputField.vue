@@ -5,7 +5,7 @@
       :name="props.name"
       v-model="inputValue"
       :type="props.type"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-clay-main focus:border-clay-main transition-colors placeholder:text-sm text-sm"
+      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-clay-main transition-colors placeholder:text-sm text-sm"
       :placeholder="props.placeholder"
       v-bind="attrs"
     />

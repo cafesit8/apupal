@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@astrojs/vue": "^5.1.2",
+    "@formkit/auto-animate": "0.9.0",
     "@mercadopago/sdk-js": "0.0.3",
     "@tailwindcss/vite": "^4.1.16",
     "astro": "^5.15.1",
     "cally": "0.8.0",
     "tailwindcss": "^4.1.16",
     "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0"
   }
 }
