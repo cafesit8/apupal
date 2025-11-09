@@ -61,6 +61,7 @@ import AvailableTimes from "../components/AvailableTimes.vue";
 import Toast from "../components/Toast.vue";
 import type { RootSchedulePerDay, Schedule, SchedulePerDay } from "../types/calendar";
 import type { ToastInfo } from "../types/toast";
+import { hoursAvailable } from "../const/time";
 
 const calendarRef = ref<any | null>(null) 
 const selected = ref("")
@@ -86,8 +87,10 @@ async function cargarHorarios() {
   
   loadingHorarios.value = true;
   try {
-    const response = await fetch(`${API_URL}/api/horarios/${selected.value}`);
-    const data: RootSchedulePerDay = await response.json();
+    // const response = await fetch(`${API_URL}/api/horarios/${selected.value}`);
+    // const data: RootSchedulePerDay = await response.json();
+
+    const data = {success: true, schedule: hoursAvailable}
     
     if (data.success) {
       schedule.value = data.schedule
